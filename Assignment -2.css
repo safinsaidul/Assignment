@@ -1,0 +1,40 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    grid-column-gap: 7px;
+    grid-row-gap: 20px;
+
+}
+.container-item{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    margin: 4px;
+    padding: 4px;
+}
+/*********************************
+Media Queries for Mobile Phones:
+**********************************/
+
+@media only screen and (max-width: 688px) {
+
+    .container{
+        
+        /* flex-direction:column-reverse; */
+        grid-template-columns: 1fr;
+    }
+
+    
+}
+
+
+/*****************************
+Media Queries for TABs:
+******************************/
+
+@media only screen and (max-width: 992px) and (min-width:689px)  {
+    
+    .container{
+        grid-template-columns: 280px 280px;
+    }
+
+}
